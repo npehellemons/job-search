@@ -9,7 +9,7 @@
         }}</a>
         <nav class="h-full ml-12">
         <ul class="flex h-full p-0 m-0 list-none">
-          <li v-for="menuItem in menuItems" :key="menuItem.name" class="h-full ml-9 first:ml-0">
+          <li v-for="menuItem in menuItems" :key="menuItem.name" class="h-full ml-9 first:ml-0" data-test="main-nav-list-item">
             <a :href="menuItem.url" class="flex items-center h-full py-2.5">{{ menuItem.name }}</a>
           </li>
         </ul>
