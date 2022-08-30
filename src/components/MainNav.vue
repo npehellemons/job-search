@@ -8,15 +8,23 @@
           company
         }}</a>
         <nav class="h-full ml-12">
-        <ul class="flex h-full p-0 m-0 list-none">
-          <li v-for="menuItem in menuItems" :key="menuItem.name" class="h-full ml-9 first:ml-0" data-test="main-nav-list-item">
-            <a :href="menuItem.url" class="flex items-center h-full py-2.5">{{ menuItem.name }}</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="flex items-center h-full ml-auto">
-        <action-button />
-      </div>
+          <ul class="flex h-full p-0 m-0 list-none">
+            <li
+              v-for="menuItem in menuItems"
+              :key="menuItem.name"
+              class="h-full ml-9 first:ml-0"
+              data-test="main-nav-list-item"
+            >
+              <a :href="menuItem.url" class="flex items-center h-full py-2.5">{{
+                menuItem.name
+              }}</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center h-full ml-auto">
+          <action-button v-if="!isLoggedIn" data-test="login-button" @click="loginUser" />
+          <profile-image v-else data-test="profile-image" />
+        </div>
       </div>
     </div>
   </header>
@@ -24,11 +32,13 @@
 
 <script>
 import ActionButton from "@/components/ActionButton.vue";
+import ProfileImage from "./ProfileImage.vue";
 
 export default {
   name: "MainNav",
   components: {
     ActionButton,
+    ProfileImage,
   },
   data() {
     return {
@@ -37,26 +47,32 @@ export default {
       menuItems: [
         {
           name: "Teams",
-          url: "https://careers.google.com/teams"
+          url: "https://careers.google.com/teams",
         },
         {
           name: "Locations",
-          url: "https://careers.google.com/locations"
+          url: "https://careers.google.com/locations",
         },
         {
           name: "Benefits",
-          url: "https://careers.google.com/benefits"
+          url: "https://careers.google.com/benefits",
         },
         {
           name: "Jobs",
-          url: "https://careers.google.com/jobs"
+          url: "https://careers.google.com/jobs",
         },
         {
           name: "Students",
-          url: "https://careers.google.com/students"
-        }
-      ]
+          url: "https://careers.google.com/students",
+        },
+      ],
+      isLoggedIn: false,
     };
   },
+  methods: {
+    loginUser() {
+      this.isLoggedIn = true;
+    }
+  }
 };
 </script>
