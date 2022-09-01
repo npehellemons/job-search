@@ -15,16 +15,24 @@
               class="h-full ml-9 first:ml-0"
               data-test="main-nav-list-item"
             >
-              <a :href="menuItem.url" class="flex items-center h-full py-2.5 text-gray-600 hover:text-black">{{
-                menuItem.name
-              }}</a>
+              <a
+                :href="menuItem.url"
+                class="flex items-center h-full py-2.5 text-gray-600 hover:text-black"
+                >{{ menuItem.name }}</a
+              >
             </li>
           </ul>
         </nav>
         <div class="flex items-center h-full ml-auto">
-          <action-button v-if="!isLoggedIn" data-test="login-button" @click="loginUser" />
+          <action-button
+            v-if="!isLoggedIn"
+            data-test="login-button"
+            text="Sign in"
+            type="primary"
+            @click="loginUser"
+          />
           <profile-image v-else data-test="profile-image" />
-        </div>
+        </div>  
       </div>
     </div>
   </header>
@@ -72,7 +80,7 @@ export default {
   methods: {
     loginUser() {
       this.isLoggedIn = true;
-    }
-  }
+    },
+  },
 };
 </script>
