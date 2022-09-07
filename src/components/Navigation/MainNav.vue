@@ -5,13 +5,10 @@
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
         <!-- <img src="https://www.svgrepo.com/show/90383/cloud.svg" class="flex items-center h-full scale-50 mr-0" /> -->
-        <a :href="url" class="flex items-center h-full text-xl text-blue-400">{{
-          company.firstName
-        }}</a>
-        <a
-          :href="url"
-          class="flex items-center h-full ml-1 text-xl text-gray-500"
-          >{{ company.lastName }}</a
+        <router-link
+          :to="{ name: 'Home' }"
+          class="flex items-center h-full text-xl"
+          ><span class="text-blue-400 mr-1">Cloud </span>Careers</router-link
         >
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
@@ -59,11 +56,6 @@ export default {
   },
   data() {
     return {
-      company: {
-        firstName: "Cloud ",
-        lastName: "Careers",
-      },
-      url: "https://careers.google.com",
       menuItems: [
         {
           name: "Teams",
