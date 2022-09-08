@@ -18,10 +18,10 @@
               class="h-full ml-9 first:ml-0"
               data-test="main-nav-list-item"
             >
-              <a
-                :href="menuItem.url"
+              <router-link
+                :to="menuItem.url"
                 class="flex items-center h-full py-2.5 text-gray-600 hover:text-black"
-                >{{ menuItem.name }}</a
+                >{{ menuItem.name }}</router-link
               >
             </li>
           </ul>
@@ -59,23 +59,23 @@ export default {
       menuItems: [
         {
           name: "Teams",
-          url: "https://careers.google.com/teams",
+          url: "/",
         },
         {
           name: "Locations",
-          url: "https://careers.google.com/locations",
+          url: "/",
         },
         {
           name: "Benefits",
-          url: "https://careers.google.com/benefits",
+          url: "/",
         },
         {
           name: "Jobs",
-          url: "https://careers.google.com/jobs",
+          url: "/jobs/results",
         },
         {
           name: "Students",
-          url: "https://careers.google.com/students",
+          url: "/",
         },
       ],
       isLoggedIn: false,
