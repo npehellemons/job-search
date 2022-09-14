@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1663155304057" clover="3.2.0">
-  <project timestamp="1663155304057" name="All files">
-    <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="9" elements="31" coveredelements="31" complexity="0" loc="22" ncloc="22" packages="5" files="7" classes="7"/>
+<coverage generated="1663156327062" clover="3.2.0">
+  <project timestamp="1663156327062" name="All files">
+    <metrics statements="24" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="9" elements="34" coveredelements="32" complexity="0" loc="24" ncloc="24" packages="6" files="8" classes="8"/>
+    <package name="api">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="getJobs.js" path="/Users/nickyhellemons/Documents/code/vue-projects/job-search/src/api/getJobs.js">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
     <package name="components.JobResults">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="JobListing.vue" path="/Users/nickyhellemons/Documents/code/vue-projects/job-search/src/components/JobResults/JobListing.vue">
