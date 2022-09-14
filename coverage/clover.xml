@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1662539320609" clover="3.2.0">
-  <project timestamp="1662539320609" name="All files">
-    <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="20" coveredelements="20" complexity="0" loc="14" ncloc="14" packages="3" files="5" classes="5"/>
+<coverage generated="1663138184597" clover="3.2.0">
+  <project timestamp="1663138184597" name="All files">
+    <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7" elements="23" coveredelements="23" complexity="0" loc="16" ncloc="16" packages="4" files="6" classes="6"/>
+    <package name="components.JobResults">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="JobListing.vue" path="/Users/nickyhellemons/Documents/code/vue-projects/job-search/src/components/JobResults/JobListing.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="64" count="5" type="stmt"/>
+      </file>
+    </package>
     <package name="components.Navigation">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="ProfileImage.vue" path="/Users/nickyhellemons/Documents/code/vue-projects/job-search/src/components/Navigation/ProfileImage.vue">
@@ -11,22 +19,22 @@
       </file>
       <file name="Subnav.vue" path="/Users/nickyhellemons/Documents/code/vue-projects/job-search/src/components/Navigation/Subnav.vue">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
       </file>
     </package>
     <package name="components.Shared">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="ActionButton.vue" path="/Users/nickyhellemons/Documents/code/vue-projects/job-search/src/components/Shared/ActionButton.vue">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="20" count="7" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
       </file>
       <file name="TextInput.vue" path="/Users/nickyhellemons/Documents/code/vue-projects/job-search/src/components/Shared/TextInput.vue">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="28" count="5" type="stmt"/>
       </file>
     </package>
     <package name="utils">
