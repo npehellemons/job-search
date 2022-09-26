@@ -8,7 +8,7 @@ describe("JobListings.vue", () => {
       page: "1",
       ...queryParams,
     },
-  });
+  }); 
 
   const createStore = (config = {}) => ({
     state: {
